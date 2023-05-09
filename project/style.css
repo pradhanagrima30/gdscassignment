@@ -1,0 +1,311 @@
+/* font-family: 'Libre Baskerville', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Source Serif Pro', serif; */
+
+/* HEADER */
+body{
+    background-color: rgb(246, 178, 151);
+}
+.head{
+    display:grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    margin-top:30px;
+}
+/* LOGO */
+
+.logo {
+   display:flex;
+   justify-items: center;
+    align-items: center;
+    margin-left:94px;
+    font-family: 'Playfair Display', serif;
+    font-size:20px;
+    color:rgb(140 43 43 / 93%);
+}
+
+/* NAVIGATION BAR */
+.navbar ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.navbar ul li{
+    list-style: none;
+    margin: 24px 52px 0px 28px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+}
+
+/* SEARCH BAR */
+#search{
+    margin: 35px 68px 0px 78px;
+    padding: 7px;
+    background-color: rgb(165 42 42 / 48%);
+    border:2px solid black;
+    border-radius:5px;
+}
+::placeholder{
+    color:white;
+    font-family: 'Libre Baskerville', serif;
+}
+
+/* MAIN PAGE */
+.main{
+    display:grid;
+    grid-template-columns: 2fr 2fr;
+}
+#petimg{
+    margin: 20px 30px 0px 114px;
+}
+#tagline{
+    font-size: 42px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    margin: 95px 46px 0px 132px;
+    text-align: center;
+}
+#shopnow{
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    padding:5px;
+    background-color: rgba(157, 14, 14, 0.744);
+    color:white;
+    border:2px solid black;
+    border-radius:7px;
+}
+#shopnow:hover{
+    transition: all 3s ease-in-out 0.2s;
+    transform:scale(1.5);
+}
+
+/* CATEGORIES */
+#cate{
+    background-color: rgba(136, 205, 227, 0.884);
+    margin-top:70px;
+    /* position:absolute; */
+    /* width:100%; */
+}
+#category{
+    font-size:35px;
+    color: rgb(117, 8, 8);
+    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Playfair Display', serif;
+    /* margin-top:100px; */
+    text-align: center;
+}
+.categoriesgrid{
+    display:grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-areas: 
+    'dog cat bird';
+    grid-gap: 40px;
+}
+#dog{
+    grid-area: dog;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+#dog h4{
+    font-family: 'Libre Baskerville', serif;
+    font-size:25px;
+}
+#dog img{
+    border: 2px solid rgba(157, 14, 14, 0.744);
+    border-radius:34px;
+}
+#dog p{
+    font-family: 'Source Serif Pro', serif;
+    font-size:20px;
+    margin-left: 10px;
+}
+#cat{
+    grid-area: cat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+#cat h4{
+    font-family: 'Libre Baskerville', serif;
+    font-size:25px;
+}
+#cat img{
+    border: 2px solid rgba(157, 14, 14, 0.744);
+    border-radius:34px;
+}
+#cat p{
+    font-family: 'Source Serif Pro', serif;
+    font-size:20px;
+}
+#bird{
+    grid-area: bird;
+    display:flex;
+    align-items: center;
+    flex-flow: column;
+}
+#bird h4{
+    font-family: 'Libre Baskerville', serif;
+    font-size:25px;
+}
+#bird img{
+    border: 2px solid rgba(157, 14, 14, 0.744);
+    border-radius:34px;
+}
+#bird p{
+    font-family: 'Source Serif Pro', serif;
+    font-size:20px;
+}
+
+/* MERCHES */
+.merch{
+    background-color: rgba(115, 224, 115, 0.926);
+}
+#heading{
+    font-size:35px;
+    color: rgb(117, 8, 8);
+    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Playfair Display', serif;
+    /* margin-top:100px; */
+    text-align: center;
+}
+.merchesgrid{
+    display:grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas: 
+    'general personalised';
+    grid-gap: 40px;
+}
+#general{
+    grid-area: general;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+#general h4{
+    font-family: 'Libre Baskerville', serif;
+    font-size:25px;
+}
+#general p{
+    font-family: 'Source Serif Pro', serif;
+    font-size:20px;
+}
+#general img{
+    border: 2px solid rgba(157, 14, 14, 0.744);
+    border-radius:34px;
+}
+#general img:hover{
+    transition: all 3s ease-in-out 0.2s;
+    transform:scale(1.5);
+}
+#general a{
+    font-family: 'Source Serif Pro', serif;
+    font-size:18px;
+}
+
+#person{
+    grid-area: personalised;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+#person h4{
+    font-family: 'Libre Baskerville', serif;
+    font-size:25px;
+}
+#person p{
+    font-family: 'Source Serif Pro', serif;
+    font-size:20px;
+}
+#person img{
+    border: 2px solid rgba(157, 14, 14, 0.744);
+    border-radius:34px;
+}
+#person img:hover{
+    transition: all 3s ease-in-out 0.2s;
+    transform:scale(1.5);
+}
+#person a{
+    font-family: 'Source Serif Pro', serif;
+    font-size:18px;
+}
+
+/* END PAGE */
+.endpage{
+    background-color: rgba(230, 238, 136, 0.874);
+    height:470px;
+}
+.grids{
+    display:grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-areas: 
+    'contact category services';
+    grid-gap: 40px;
+}
+#other{
+    font-size:35px;
+    color: rgb(117, 8, 8);
+    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+#contact{
+    grid-template-areas: contact;
+    margin-left:40px;
+}
+#contact h4{
+    font-family: 'Libre Baskerville', serif;
+    font-size:25px;
+}
+#contact img{
+    margin:5px;
+}
+#endcategory{
+    grid-template-areas: category;
+    margin-left:40px;
+    display:flex;
+    flex-flow: column;
+}
+#endcategory h4{
+    font-family: 'Libre Baskerville', serif;
+    font-size:25px;
+}
+#endcategory a{
+    font-family: 'Source Serif Pro', serif;
+    font-size:18px;
+}
+#services{
+    grid-template-areas: services;
+    margin-left:40px;
+    display:flex;
+    flex-flow: column;
+}
+#services h4{
+    font-family: 'Libre Baskerville', serif;
+    font-size:25px;
+}
+#services a{
+    font-family: 'Source Serif Pro', serif;
+    font-size:18px;
+}
+#services ul{
+    font-family: 'Source Serif Pro', serif;
+    font-size:18px;
+}
+#services p{
+    font-weight: bold;
+    font-family: 'Source Serif Pro', serif;
+    font-size:20px;
+}
+footer{
+    margin-top:40px;
+    margin-bottom:30px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size:20px;
+}
