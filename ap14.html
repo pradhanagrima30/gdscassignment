@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            font-size:10px;
+        }
+        .container{
+            height:400px;
+            width:100%;
+            border:3px solid darkgreen;
+            font-size:10px;
+            display: flex;
+            /* flex-direction: row;
+            flex-wrap:wrap; */
+            flex-flow: row wrap;
+            /* justify-content: center; */
+            justify-content: space-around;
+            align-items:center;
+            /* align-items:stretch; */
+        }
+        .box{
+            height:10vh;
+            width:20vw;
+            color:royalblue;
+            background-color: yellowgreen;
+            font-size: 3rem;
+            padding:2rem;
+            margin:3px;
+            border: 2px solid darkred;
+        }
+        #box-1{
+            order: 3;
+            flex-grow:0;
+            align-self: center;
+        }
+        #box-2{
+            order:1;
+            /* flex-grow:0; */
+            /* flex-basis: 300px; */
+            /* flex:0 0 300px; */
+        }
+        #box-3{
+            order:6;
+            flex-shrink:4;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3 class="box" id="box-1">1. ROSE</h3>
+        <h3 class="box" id="box-2">2. SUNFLOWER</h3>
+        <h3 class="box" id="box-3">3. DAISY</h3>
+        <h3 class="box" id="box-4">4. LILY</h3>
+    </div>
+</body>
+</html>

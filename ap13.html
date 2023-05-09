@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties</title>
+    <style>
+        img{
+            width:50px;
+            display:block;
+            margin:auto;
+        }
+        h3{
+            text-align: center;
+            margin:8px 0px;
+        }
+        .container{
+            height:2000px;
+            border: 2px solid green;
+        }
+        .box{
+            display:inline-block;
+            border: 3px solid black;
+            width:65px;
+            height:20px;
+            margin:3px;
+            text-align:center;
+        }
+        #box4{
+            /* position:relative; */
+            /* position:absolute; */
+            position:fixed;
+            /* position: sticky; */
+            right:10px;
+            bottom:10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Chrome_icon_%28February_2022%29.svg/800px-Google_Chrome_icon_%28February_2022%29.svg.png" alt="Google Chrome">
+        <h3>GOOGLE CHROME</h3>
+    </header>
+    <div class="container">
+        <div class="box" id="box1">HOME</div>
+        <div class="box" id="box2">IMAGES</div>
+        <div class="box" id="box3">VIDEOS</div>
+        <div class="box" id="box4">HELP</div>
+        <div class="box" id="box5">MORE</div>
+    </div>
+</body>
+</html>
