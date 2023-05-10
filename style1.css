@@ -1,0 +1,214 @@
+/* font-family: 'Roboto Slab', serif;
+font-family: 'Source Serif Pro', serif; */
+body{
+    background-color: white;
+}
+/* HEADER SECTION */
+.header{
+    display:grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    margin-top:30px;
+}
+.header h2{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 32px;
+    color:rgba(11, 119, 88, 0.749);
+    margin-left:20px;
+    margin-top: 19px;
+}
+/* NAVIGATION BAR */
+.navbar ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 11px 152px 0px 28px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+}
+/* SEARCH BAR */
+#search{
+    margin: 20px 66px 52px 15px;
+    padding: 7px;
+    /* background-color:rgba(11, 119, 88, 0.749); */
+    border:1px solid black;
+    border-radius:5px;
+}
+::placeholder{
+    /* color:white; */
+    font-family: 'Roboto Slab', serif;
+}
+/* HERO SECTION */
+.hero{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    background-color:rgba(11, 119, 88, 0.749);
+}
+#image{
+    width:100%;
+    height:100%;
+    margin: 12px 0px 8px 0px;
+    opacity:0.8;
+}
+#tagline{
+    font-size: 25px;
+    font-family: 'Source Serif Pro', serif;
+    margin: 45px 100px 0px 162px;
+    text-align: center;
+    color:white;
+}
+#tag{
+    font-size: 45px;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold;
+    margin: 109px 96px 0px 132px;
+    text-align: center;
+    /* color:white; */
+}
+
+/* PRODUCTS */
+.category{
+    margin-top:70px;
+}
+.category h2{
+    font-size:30px;
+    color: rgba(11, 119, 88, 0.749);
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold;
+    text-align: center;
+}
+.products{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'headphone mobile speaker smartwatch tablet';
+    /* grid-gap: 15px; */
+}
+#headphones{
+    grid-area: headphone;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+#headphones p{
+    font-family: 'Roboto Slab', serif;
+    font-size:20px;
+    margin-left: 10px;
+}
+#headphones img:hover{
+    transition: all 3s ease-in-out 0.2s;
+    transform:scale(1.1);
+}
+#mobile{
+    grid-area: mobile;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+#mobile p{
+    font-family: 'Roboto Slab', serif;
+    font-size:20px;
+    margin-left: 10px;
+}
+#mobile img:hover{
+    transition: all 3s ease-in-out 0.2s;
+    transform:scale(1.1);
+}
+#speaker{
+    grid-area: speaker;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+#speaker p{
+    font-family: 'Roboto Slab', serif;
+    font-size:20px;
+    margin-left: 5px;
+}
+#speaker img:hover{
+    transition: all 3s ease-in-out 0.2s;
+    transform:scale(1.1);
+}
+#smartwatch{
+    grid-area: smartwatch;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+#smartwatch p{
+    font-family: 'Roboto Slab', serif;
+    font-size:20px;
+    margin-left: 5px;
+}
+#smartwatch img:hover{
+    transition: all 3s ease-in-out 0.2s;
+    transform:scale(1.1);
+}
+#tablet{
+    grid-area: tablet;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+#tablet p{
+    font-family: 'Roboto Slab', serif;
+    font-size:20px;
+    margin-left: 5px;
+}
+#tablet img:hover{
+    transition: all 3s ease-in-out 0.2s;
+    transform:scale(1.1);
+}
+
+/* FOOTER */
+.footer{
+    background-color: rgba(11, 119, 88, 0.749);
+    display:grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas: 
+    'address newsletter';
+    grid-gap: 40px;
+}
+#address{
+    margin-top: 24px;
+    margin-left: 56px;
+    grid-area: address;
+    font-family: 'Roboto Slab', serif;
+    font-size:15px;
+}
+#address h3{
+    font-family: 'Source Serif Pro', serif;
+    font-size:20px;
+}
+#newsletter{
+    margin-top:10px;
+    margin-left:15px;
+    grid-area: newsletter;
+    font-family: 'Roboto Slab', serif;
+    font-size:15px;
+    text-align:center;
+}
+#newsletter h3{
+    font-family: 'Source Serif Pro', serif;
+    font-size:20px;
+}
+#email{
+    font-family: 'Roboto Slab', serif;
+    margin: 20px 0px 1px 0px;
+    padding: 4px;
+}
+#button{
+    font-family: 'Roboto Slab', serif;
+    margin: 15px 0px 27px 17px;
+    padding: 3px;
+}
+#button ::hover{
+    cursor:pointer;
+}
